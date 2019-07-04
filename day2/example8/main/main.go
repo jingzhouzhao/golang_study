@@ -33,4 +33,20 @@ func main()  {
 	a4= a4+5;
 	fmt.Println(a4)
 
+	//int转string
+	//var str2 string
+	str2 := fmt.Sprint(a3)
+	fmt.Printf("%q\n", str2)
+	fmt.Printf("%T\n", str2)
+
+	//字符串拼接
+	stra:="hello"
+	strb:="golong"
+	fmt.Println(stra+" "+strb)
+	strc:=fmt.Sprintf("%s %s",stra,strb)
+	fmt.Println(strc)
+	//字符串长度
+	fmt.Println(len(strc))
+
+
 }
