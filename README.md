@@ -17,3 +17,12 @@ day2:
 数据类型
 
 值传递、引用传递、指针
+
+day3:
+
+Scanf、strings、strconv
+函数传递
+defer
+等等
+
+
