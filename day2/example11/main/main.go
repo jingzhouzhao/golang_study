@@ -28,7 +28,7 @@ func main() {
 		}
 	}
 	//求n的阶乘和
-	n := 4
+	n := 5
 	sum := 0
 	for i := 1; i <= n; i++ {
 		sum+=factorial(i)
