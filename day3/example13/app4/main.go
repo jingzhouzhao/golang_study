@@ -1,7 +1,9 @@
 package main
 
 import (
-	"strconv"
+	"strings"
+	"os"
+	"bufio"
 	"fmt"
 )
 /**大数相加*/
@@ -52,11 +54,19 @@ func addBigNumber(str1,str2 string) string {
 }
 
 func main()  {
-	// var str1 string
-	// var str2 string
-	// fmt.Println("请输入两个大数，以空格分隔：")
-	// fmt.Scanf("%s%s\n", &str1,&str2)
-	// fmt.Println("和为：",addBigNumber(str1,str2))
+	fmt.Println("请输入需要相加的两个大数(x+y):")
+	reader:=bufio.NewReader(os.Stdin)
+	input,_,err:=reader.ReadLine()
+	if err!=nil{
+		fmt.Print("输入有误")
+		return 
+	}
+	s:=strings.Split(string(input), "+")
+	if len(s)!=2{
+		fmt.Println("please input x+y")
+		return
+	}
+	fmt.Println("和为：",addBigNumber(s[0],s[1]))
 	//9223372036854775807
 	// bi, _ := strconv.ParseInt("0111111111111111111111111111111111111111111111111111111111111111", 2, 64)
 	// fmt.Printf("%d", bi)
