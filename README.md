@@ -21,8 +21,30 @@ day2:
 day3:
 
 Scanf、strings、strconv
+
 函数传递
+
 defer
+
 等等
+
+day4:
+
+panic,recover
+
+new,make
+
+闭包
+
+数组与切片
+
+rune
+
+map
+
+线程同步
+
+排序算法
+
 
 
