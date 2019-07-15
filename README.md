@@ -1,16 +1,16 @@
-# golang_study
+# Golang Studying
 
-go_path src下新建golang_study
+go_path src下新建golang_studying
 
-git clone 到 golang_study目录下。
+git clone 到 golang_studying目录下。
 
-day1：
+#### day1：
 
 经典hello golang示例
 
 提高入门兴趣的goroute（并发），channle（线程通信）示例
 
-day2:
+#### day2:
 
 变量声明、作用域
 
@@ -18,7 +18,7 @@ day2:
 
 值传递、引用传递、指针
 
-day3:
+#### day3:
 
 Scanf、strings、strconv
 
@@ -28,7 +28,7 @@ defer
 
 等等
 
-day4:
+#### day4:
 
 panic,recover
 
@@ -46,7 +46,7 @@ map
 
 排序算法
 
-day5:
+#### day5:
 
 结构体struct
 
@@ -59,6 +59,17 @@ day5:
 接口（一组方法）定义、实现
 
 图书管理系统demo /example10
+
+
+#### day6:
+
+接口使用实例
+
+通用链表实例
+
+反射使用示例
+
+反射获取字段Tag
 
 
 

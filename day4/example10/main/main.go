@@ -48,7 +48,7 @@ func InsertionSort(arr []int) []int{
 	return arr
 }
 
-//快速排序(核心思想：分而治之)
+//快速排序(核心思想：分而治之，in-place方法)
 func QuickSort(arr []int,left int, right int) []int{
 	if left>=right{
 		return arr
@@ -57,6 +57,7 @@ func QuickSort(arr []int,left int, right int) []int{
 	k:=left
 	for i := left+1; i <= right; i++ {
 		if arr[i]<val{
+			//K+1就是交换后k值新的位置，相当于每次向后移动一位
 			arr[k],arr[i] = arr[i],arr[k+1]
 			k++
 		}
