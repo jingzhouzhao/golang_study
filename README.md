@@ -72,6 +72,51 @@ map
 反射获取字段Tag
 
 
+### day7:
+
+终端读写
+
+缓冲区读写
+
+文件读写
+
+Gzip读写
+
+命令行参数读取
+
+io/ioutil
+
+json序列化、反序列化
+
+自定义Error
+
+
+### day8:
+
+Goroutine
+
+Goroutine使用chan通信，阻塞
+
+只读只写chan
+
+chan select
+
+定时器
+
+单元测试
+
+### day9:
+
+socket
+
+redis
+
+### day10:
+
+
+
+
+
 
 
 
