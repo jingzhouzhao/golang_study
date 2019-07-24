@@ -43,7 +43,13 @@ func process(){
 	}
 
 	ctx,cancle=context.WithTimeout(context.Background(), 2*time.Second)
-	_,err=kapi.Set(ctx, "/logagent/conf/logPath2", "logagent.log2",nil)
+	_,err=kapi.Set(ctx, "/logagent/conf/172.23.154.1/logPath", "logagent.log2",nil)
+	cancle()
+	if err!=nil{
+		fmt.Println("set node failed:",err)
+	}
+	ctx,cancle=context.WithTimeout(context.Background(), 2*time.Second)
+	_,err=kapi.Set(ctx, "/logagent/conf/172.23.154.1/topic", "test",nil)
 	cancle()
 	if err!=nil{
 		fmt.Println("set node failed:",err)

@@ -11,6 +11,9 @@ type AppConfig struct{
 	logLevel string
 	logPath string
 	kafkaAddr string
+	etcdAddr string 
+	etcdTimeout int
+	etcdKey string
 	collectConfigs []tailf.CollectConfig
 }
 var (
@@ -67,6 +70,27 @@ func loadConfig(confType,filename string) (err error){
 	}
 	appConfig.kafkaAddr = kafkaAddr
 
+	etcdAddr:=conf.String("etcd::addr")
+	if len(etcdAddr) == 0{
+		err = errors.New("etcd::addr must not be empty")
+		return
+	}
+	appConfig.etcdAddr = etcdAddr
+
+	etcdTimeout,err := conf.Int("etcd::timeout")
+	if err!=nil{
+		err = errors.New("invalid etcd::addr")
+		return
+	}
+	appConfig.etcdTimeout = etcdTimeout
+
+	etcdKey:=conf.String("etcd::key")
+	if len(etcdKey) == 0{
+		err = errors.New("etcd::key must not be empty")
+		return
+	}
+	appConfig.etcdKey = etcdKey
+	
 	err=loadCollectConfig(conf)
 	
 	return

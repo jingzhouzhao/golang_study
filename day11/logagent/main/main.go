@@ -14,6 +14,7 @@ func main(){
 		fmt.Println("load config failed:",err)
 		panic(err)
 	}
+	fmt.Println("load config successed")
 	//fmt.Printf("%#v\n",appConfig)
 	err = initLogger()
 	if err!=nil {
@@ -31,8 +32,14 @@ func main(){
 		logs.Error("init kafka failed:",err)
 		panic(err)
 	}
-	logs.Debug("initialize Success.")
-	logs.Debug("load config Success,config:%v", appConfig)
+	err = initEtcd(appConfig.etcdAddr, appConfig.etcdTimeout, appConfig.etcdKey)
+	if err!=nil {
+		logs.Error("init etcd failed:",err)
+		panic(err)
+	}
+
+	logs.Debug("Initialization all successful")
+	
 
 	err=runServer()
 	if err!=nil {
