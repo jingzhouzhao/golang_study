@@ -1,0 +1,4 @@
+2019/07/23 11:03:13.373 [D] [main.go:28]  this is a debug test 
+2019/07/23 11:03:13.373 [I] [main.go:29]  this is a info test 
+2019/07/23 11:03:13.373 [W] [main.go:30]  this is a warn test 
+2019/07/23 11:03:13.373 [E] [main.go:31]  this is a error test 

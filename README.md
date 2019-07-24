@@ -113,9 +113,35 @@ redis
 
 ### day10:
 
+http
+
+http/模板
+
+mysql
+
+sqlx使用
 
 
+### day11:
 
+kafka
+
+tailf
+
+logs
+
+日志收集
+
+
+### day12：
+
+context
+
+etcd
+
+kafka consumer
+
+wait group
 
 
 
