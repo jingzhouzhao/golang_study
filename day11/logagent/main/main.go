@@ -14,7 +14,7 @@ func main(){
 		fmt.Println("load config failed:",err)
 		panic(err)
 	}
-	fmt.Println("load config successed")
+	fmt.Println("load config successful")
 	//fmt.Printf("%#v\n",appConfig)
 	err = initLogger()
 	if err!=nil {
@@ -22,7 +22,18 @@ func main(){
 		panic(err)
 	}
 
-	err = tailf.InitTail(appConfig.collectConfigs)
+	cli,err := initEtcd(appConfig.etcdAddr, appConfig.etcdTimeout)
+	if err!=nil {
+		logs.Error("init etcd failed:",err)
+		panic(err)
+	}
+
+	collectConfs,err:=loadCollectConfig(cli, appConfig.etcdKey, appConfig.etcdTimeout)
+	if err!=nil {
+		logs.Error("load collect configs failed:",err)
+		panic(err)
+	}
+	err = tailf.InitTail(collectConfs)
 	if err!=nil {
 		logs.Error("init tail failed:",err)
 		panic(err)
@@ -32,11 +43,7 @@ func main(){
 		logs.Error("init kafka failed:",err)
 		panic(err)
 	}
-	err = initEtcd(appConfig.etcdAddr, appConfig.etcdTimeout, appConfig.etcdKey)
-	if err!=nil {
-		logs.Error("init etcd failed:",err)
-		panic(err)
-	}
+
 
 	logs.Debug("Initialization all successful")
 	

@@ -20,7 +20,7 @@ func InitKafka(addr string)(err error){
 		return 
 	}
 	producer = pd
-	logs.Debug("initialize kafka Success")
+	logs.Debug("initialize kafka Successful")
 	return
 }
 

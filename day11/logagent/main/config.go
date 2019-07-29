@@ -1,7 +1,6 @@
 package main
 
 import (
-	"go_dev/day11/logagent/tailf"
 	"errors"
 	"fmt"
 	"github.com/astaxie/beego/config"
@@ -14,7 +13,7 @@ type AppConfig struct{
 	etcdAddr string 
 	etcdTimeout int
 	etcdKey string
-	collectConfigs []tailf.CollectConfig
+	//collectConfigs []tailf.CollectConfig
 }
 var (
 	appConfig = defaultAppConfig()
@@ -27,27 +26,28 @@ func defaultAppConfig() *AppConfig{
 	}
 }
 
-func loadCollectConfig(conf config.Configer)(err error){
-	var collectConfig tailf.CollectConfig
-	collectConfig.LogPath = conf.String("collect::logPath")
-	if len(collectConfig.LogPath)==0{
-		err = errors.New("invalid collect::logPath")
-		return
-	}
-	collectConfig.Topic = conf.String("collect::topic")
-	if len(collectConfig.Topic)==0{
-		err = errors.New("invalid collect::topic")
-		return
-	}
-	collectConfig.ChanSize,err = conf.Int("collect::chanSize")
-	if err!=nil{
-		err = errors.New("invalid collect::chanSize")
-		return
-	}
-	appConfig.collectConfigs = append(appConfig.collectConfigs, collectConfig)
-	return 
+//Deprecated  use etcd
+// func loadCollectConfig(conf config.Configer)(err error){
+// 	var collectConfig tailf.CollectConfig
+// 	collectConfig.LogPath = conf.String("collect::logPath")
+// 	if len(collectConfig.LogPath)==0{
+// 		err = errors.New("invalid collect::logPath")
+// 		return
+// 	}
+// 	collectConfig.Topic = conf.String("collect::topic")
+// 	if len(collectConfig.Topic)==0{
+// 		err = errors.New("invalid collect::topic")
+// 		return
+// 	}
+// 	collectConfig.ChanSize,err = conf.Int("collect::chanSize")
+// 	if err!=nil{
+// 		err = errors.New("invalid collect::chanSize")
+// 		return
+// 	}
+// 	appConfig.collectConfigs = append(appConfig.collectConfigs, collectConfig)
+// 	return 
 
-}
+// }
 
 func loadConfig(confType,filename string) (err error){
 	conf,err:=config.NewConfig(confType, filename)
@@ -91,7 +91,7 @@ func loadConfig(confType,filename string) (err error){
 	}
 	appConfig.etcdKey = etcdKey
 	
-	err=loadCollectConfig(conf)
+	//err=loadCollectConfig(conf)
 	
 	return
 }

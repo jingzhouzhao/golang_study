@@ -28,7 +28,7 @@ func initLogger()(err error){
 	m["level"] = convertLogLevel(appConfig.logLevel)
 	config,err := json.Marshal(m)
 	if err!=nil{
-		fmt.Println("initLogger failed,marshal config error:",err)
+		fmt.Println("init Logger failed,marshal config error:",err)
 		return
 	}
 	logs.SetLogger(logs.AdapterFile, string(config))

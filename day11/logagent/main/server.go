@@ -10,9 +10,12 @@ import (
 func runServer()(err error){
 	for{
 		msg:=tailf.GetMsg()
+		if msg==nil{
+			continue
+		}
 		err=sendToKafka(msg)
 		if err!=nil{
-			logs.Error("send to kafka failed:",err)
+			logs.Error("send msg to kafka failed:",err)
 			time.Sleep(time.Second)
 			continue
 		}
