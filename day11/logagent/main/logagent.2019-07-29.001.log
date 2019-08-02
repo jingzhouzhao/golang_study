@@ -1,0 +1,90 @@
+2019/07/25 14:25:12.496 [D] [etcd.go:23]  initialize etcd Success
+2019/07/25 14:25:12.502 [W] [tailf.go:52]  collectConfigs is empty!
+2019/07/25 14:25:12.505 [D] [kafka.go:23]  initialize kafka Successful
+2019/07/25 14:25:12.505 [D] [main.go:48]  Initialization all successful
+2019/07/25 14:26:24.160 [D] [etcd.go:23]  initialize etcd Success
+2019/07/25 14:26:24.168 [W] [tailf.go:52]  collectConfigs is empty!
+2019/07/25 14:26:24.170 [D] [kafka.go:23]  initialize kafka Successful
+2019/07/25 14:26:24.170 [D] [main.go:48]  Initialization all successful
+2019/07/25 14:27:38.946 [D] [etcd.go:23]  initialize etcd Success
+2019/07/25 14:27:38.947 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.4.219
+2019/07/25 14:27:38.949 [D] [etcd.go:51]  watcher key: /logagent/conf/172.23.154.1
+2019/07/25 14:27:38.950 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.73.238
+2019/07/25 14:27:38.951 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.56.1
+2019/07/25 14:27:38.951 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.16.237
+2019/07/25 14:27:38.951 [D] [etcd.go:51]  watcher key: /logagent/conf/170.20.20.120
+2019/07/25 14:27:38.953 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.165.238
+2019/07/25 14:27:38.953 [D] [etcd.go:51]  watcher key: /logagent/conf/10.222.1.29
+2019/07/25 14:27:38.953 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.125.102
+2019/07/25 14:27:38.955 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.68.252
+2019/07/25 14:27:38.955 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.206.1
+2019/07/25 14:27:38.955 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.112.1
+2019/07/25 14:27:38.956 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.24.8
+2019/07/25 14:27:38.957 [W] [tailf.go:52]  collectConfigs is empty!
+2019/07/25 14:27:38.960 [D] [kafka.go:23]  initialize kafka Successful
+2019/07/25 14:27:38.960 [D] [main.go:48]  Initialization all successful
+2019/07/25 14:29:36.696 [D] [etcd.go:69]  update collect configs
+2019/07/25 14:30:26.370 [D] [etcd.go:69]  update collect configs
+2019/07/25 14:31:03.861 [D] [etcd.go:63]  delete collect configs
+2019/07/25 14:32:20.657 [D] [etcd.go:23]  initialize etcd Success
+2019/07/25 14:32:20.657 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.4.219
+2019/07/25 14:32:20.661 [D] [etcd.go:51]  watcher key: /logagent/conf/172.23.154.1
+2019/07/25 14:32:20.661 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.73.238
+2019/07/25 14:32:20.662 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.56.1
+2019/07/25 14:32:20.663 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.16.237
+2019/07/25 14:32:20.663 [D] [etcd.go:51]  watcher key: /logagent/conf/170.20.20.120
+2019/07/25 14:32:20.664 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.165.238
+2019/07/25 14:32:20.664 [D] [etcd.go:51]  watcher key: /logagent/conf/10.222.1.29
+2019/07/25 14:32:20.665 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.125.102
+2019/07/25 14:32:20.666 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.68.252
+2019/07/25 14:32:20.666 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.206.1
+2019/07/25 14:32:20.667 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.112.1
+2019/07/25 14:32:20.667 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.24.8
+2019/07/25 14:32:20.668 [W] [tailf.go:52]  collectConfigs is empty!
+2019/07/25 14:32:20.670 [D] [kafka.go:23]  initialize kafka Successful
+2019/07/25 14:32:20.670 [D] [main.go:48]  Initialization all successful
+2019/07/25 14:32:45.708 [D] [etcd.go:69]  update collect configs
+2019/07/25 14:32:45.708 [D] [tailf.go:149]  after update collect configs:[]*tailf.TailObj{(*tailf.TailObj)(0xc0000b0960), (*tailf.TailObj)(0xc0000b0a50), (*tailf.TailObj)(0xc0000b0b40)}
+2019/07/25 14:34:10.989 [D] [etcd.go:63]  delete collect configs
+2019/07/25 14:34:10.989 [D] [tailf.go:149]  after update collect configs:[]*tailf.TailObj(nil)
+2019/07/26 14:35:10.419 [D] [etcd.go:23]  initialize etcd Success
+2019/07/26 14:35:10.419 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.4.219
+2019/07/26 14:35:10.423 [D] [etcd.go:51]  watcher key: /logagent/conf/172.23.154.1
+2019/07/26 14:35:10.423 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.73.238
+2019/07/26 14:35:10.424 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.56.1
+2019/07/26 14:35:10.424 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.16.237
+2019/07/26 14:35:10.425 [D] [etcd.go:51]  watcher key: /logagent/conf/170.20.20.120
+2019/07/26 14:35:10.425 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.165.238
+2019/07/26 14:35:10.426 [D] [etcd.go:51]  watcher key: /logagent/conf/10.222.1.29
+2019/07/26 14:35:10.426 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.125.102
+2019/07/26 14:35:10.427 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.68.252
+2019/07/26 14:35:10.427 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.206.1
+2019/07/26 14:35:10.428 [D] [etcd.go:51]  watcher key: /logagent/conf/192.168.112.1
+2019/07/26 14:35:10.429 [D] [etcd.go:51]  watcher key: /logagent/conf/169.254.24.8
+2019/07/26 14:35:10.429 [W] [tailf.go:52]  collectConfigs is empty!
+2019/07/26 14:35:10.433 [D] [kafka.go:23]  initialize kafka Successful
+2019/07/26 14:35:10.433 [D] [main.go:48]  Initialization all successful
+2019/07/26 14:35:52.279 [D] [etcd.go:69]  update collect configs
+2019/07/26 14:35:52.279 [D] [tailf.go:149]  after update collect configs:[]*tailf.TailObj{(*tailf.TailObj)(0xc0001643c0), (*tailf.TailObj)(0xc0001644b0), (*tailf.TailObj)(0xc0001645a0)}
+2019/07/26 14:38:24.061 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:0,topic:nginx_error_log
+
+2019/07/26 14:39:42.786 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:1,topic:nginx_error_log
+
+2019/07/26 14:39:54.805 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:2,topic:nginx_error_log
+
+2019/07/26 14:50:42.347 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:3,topic:nginx_error_log
+
+2019/07/26 14:58:12.726 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:4,topic:nginx_error_log
+
+2019/07/26 14:59:50.164 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:5,topic:nginx_error_log
+
+2019/07/26 15:03:21.342 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:6,topic:nginx_error_log
+
+2019/07/26 15:03:21.342 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:7,topic:nginx_error_log
+
+2019/07/26 15:03:23.094 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:8,topic:nginx_error_log
+
+2019/07/26 15:05:28.393 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:9,topic:nginx_error_log
+
+2019/07/26 15:05:28.393 [D] [kafka.go:37]  send message to kafka success,pid:0,offset:10,topic:nginx_error_log
+
